@@ -17,52 +17,63 @@
 const inquirer = require("inquirer")
 
 
+
+
 const promptUser = () => {
     return inquirer.prompt([
-    {
-        type: "input",
-        message: "What is the name of the project?",
-        name: "title"
-    },
-    {
-        type: "input",
-        message: "What is the description of your project?",
-        name: "description"
-    },
-    {
-        type: "input",
-        message: "What are the installation instructions?",
-        name: "install"
-    },
-    {
-        type: "input",
-        message: "What is the usage information?",
-        name: "usage"
-    },
-    {
-        type: "input",
-        message: "What are the contribution guidelines?",
-        name: "contribution"
-    },
-    {
-        type: "input",
-        message: "What are the test insturctions?",
-        name: "test"
-    },
-    {
-        type: "list",
-        message: "What license are you using?",
-        name: "license",
-        choices: ['Academic Free License v3.0', 'MIT', 'ISC', 'The Unilicense']
-    },
-    {   type: "input",
+        {
+            type: "input",
+            message: "What is the name of the project?",
+            name: "title"
+        },
+        {
+            type: "input",
+            message: "What is the description of your project?",
+            name: "description"
+        },
+        {
+            type: "input",
+            message: "What are the installation instructions?",
+            name: "install"
+        },
+        {
+            type: "input",
+            message: "What is the usage information?",
+            name: "usage"
+        },
+        {
+            type: "input",
+            message: "What are the contribution guidelines?",
+            name: "contribution"
+        },
+        {
+            type: "input",
+            message: "What are the test insturctions?",
+            name: "test"
+        },
+        {
+            type: "list",
+            message: "What license are you using?",
+            name: "license",
+            choices: ['Academic Free License v3.0', 'MIT', 'ISC', 'The Unilicense']
+        },
+        {   type: "input",
         message: "What is your github username?",
         name: "github"
     },
     {   type: "input",
-        message: "What is email address?",
-        name: "email"
-    },
-]);
+    message: "What is email address?",
+    name: "email"
+},
+]).then(ans=> {
+    console.log(ans);
+
+})
 };
+
+
+
+
 promptUser();
+
+// module.exports = promptUser;

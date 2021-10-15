@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^8.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deannaboiani/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deannaboiani/readme-generator/issues"
+  },
+  "homepage": "https://github.com/deannaboiani/readme-generator#readme"
 }
